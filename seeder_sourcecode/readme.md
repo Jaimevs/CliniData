@@ -1,17 +1,47 @@
-# SEEDER
-<hr>
+# 📦 Seeder - Documentación
 
-### Codigo Fuente
-Puede incluir una carpeta con el codigo fuente (.py 0)  o si ya se tiene en el repo, pueden incluir una liga a este repositorio.
+---
 
-### Respaldo de la BD Vacía (Sin datos Generados)
-Archio de la estructura de la bd que puede ser relacional o no relacional. [URL DEL REPOSITORIO SEEDER](https://uwu.com)
+## 🔹 Código Fuente
 
-### Listado de EndPoint para Generar datos simulados
-Tabla que contendra los endpoint y descripcion de la funcionalidad sobre los datos.
+Puedes incluir una carpeta con el código fuente (`.py`) o, si ya se encuentra en un repositorio, proporciona el enlace correspondiente.  
+**Ejemplo:** [Repositorio del Seeder](https://uwu.com)
 
-### Screenshots (Capturas de Pantalla)
-De los endpoints que generan los datos.
+---
 
-### Respaldo de la BD Post Llenado (1,000, 000 de Registros)
-Respaldo de la base de datos ya con datos generados mismos que serviran para alimentar los algoritmos de análisis supervisado y no supervisado.
+## 🔹 Respaldo de la Base de Datos Vacía (Sin Datos)
+
+Incluye un archivo con la estructura de la base de datos, ya sea relacional o no relacional.  
+Este respaldo servirá como plantilla para cargar datos simulados.
+
+📎 **Repositorio del respaldo vacío:** [URL DEL REPOSITORIO SEEDER](https://uwu.com)
+
+---
+
+## 🔹 Endpoints para Generación de Datos Simulados
+
+A continuación, se muestra una tabla con los endpoints disponibles, junto con una breve descripción de su funcionalidad:
+
+| Endpoint                  | Descripción                                     |
+|---------------------------|-------------------------------------------------|
+| `/api/generate/users`     | Genera usuarios simulados                       |
+| `/api/generate/orders`    | Genera órdenes con información aleatoria        |
+| `/api/generate/products`  | Crea un catálogo de productos de prueba         |
+| ...                       | ...                                             |
+
+> 🔁 *Agrega o modifica los endpoints según sea necesario.*
+
+---
+
+## 🔹 Capturas de Pantalla
+
+Incluye capturas de pantalla del uso de los endpoints que generan los datos, preferentemente desde una herramienta como Postman o Swagger UI.
+
+---
+
+## 🔹 Respaldo de la Base de Datos con Datos Simulados (1,000,000 de registros)
+
+Este respaldo contiene una base de datos ya poblada con un millón de registros, útil para alimentar algoritmos de análisis supervisado y no supervisado.
+
+📦 **Formato recomendado:** `.sql`, `.json`, `.bson` (según el tipo de base de datos)  
+📍 **Ubicación:** [URL del respaldo con datos generados](https://uwu.com)
