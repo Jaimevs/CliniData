@@ -19,7 +19,7 @@ Generacion y visualizacion de graficos relacionados con el analisis supervisado
 Una vez aplicado los resultados algoritmos demostrar los resultados obtenidos con su interpretacion al contexto del proyecto
 
 ### Conclusion de la Fase del Proyecto
-Redaccion general de la importancia de esta fase, asi como de la importancia de los resultadso obtenidos.
+Redaccion general de la importancia de esta fase, asi como de la importancia de los resultadso obtenidos.r
 
 
 
