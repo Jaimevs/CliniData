@@ -1,25 +1,69 @@
-# Analisis Supervisado (Machine Learning)
+# 🤖 Análisis Supervisado (Machine Learning)
 
-### Propuesta de la Aplicacion
-Redaccion de los que el equipo propone para analisar y obtener una prediccion, promedio, redaccion
+---
 
-### Eleccion del mecanismo a utilizar 
-El analisis supervisado se utiliza para la generacion de conocimiento aplicado a predicciones, clasificaciones, recomendaciones, comprension de contextos, propuesta de soluciones a problema, etc. a traves de principios matematicos y estadisticos, el equipo definira el mecanismo (algoritmo) que utlizara para su poryecto
+## 📝 1. Propuesta de la Aplicación
+✦ Redacción de la propuesta del equipo para analizar los datos y obtener:
+✔️ Predicciones
+✔️ Promedios
+✔️ Resultados relevantes
 
-### Marco Teorico
-Redaccion que explique los conceptos teoricos y formulas matematicas o estadistica oara el mecanismo definido
+> 🎯 Explicar de forma clara el objetivo principal de la aplicación dentro del proyecto.
 
-### Aplicacion del Mecanismo
-Comandos que permitan aplicar los algoritmos al dataset generado en la fase ETL
+---
 
-### Graficos GGenerados (3 minimo)
-Generacion y visualizacion de graficos relacionados con el analisis supervisado
+## ⚙️ 2. Elección del Mecanismo a Utilizar
+El **análisis supervisado** se emplea para generar conocimiento aplicado a:
 
-### Resultados Obtenidos
-Una vez aplicado los resultados algoritmos demostrar los resultados obtenidos con su interpretacion al contexto del proyecto
+🔹 Predicciones
+🔹 Clasificaciones
+🔹 Recomendaciones
+🔹 Comprensión de contextos
+🔹 Propuestas de solución a problemas
 
-### Conclusion de la Fase del Proyecto
-Redaccion general de la importancia de esta fase, asi como de la importancia de los resultadso obtenidos.r
+📌 Basado en principios **matemáticos y estadísticos**, el equipo debe **definir el algoritmo** que se utilizará y justificar su elección.
 
+---
 
+## 📚 3. Marco Teórico
+✦ Redacción que explique los **conceptos teóricos** y las **fórmulas matemáticas/estadísticas** relacionadas con el mecanismo elegido.
 
+> Ejemplo: Definiciones, ecuaciones, fundamentos de regresión, árboles de decisión, redes neuronales, etc.
+
+---
+
+## 🖥️ 4. Aplicación del Mecanismo
+✦ Documentar los **comandos, librerías y pasos** necesarios para aplicar el algoritmo al dataset generado en la fase **ETL**.
+
+💡 Se recomienda incluir fragmentos de código y ejemplos prácticos.
+
+---
+
+## 📊 5. Gráficos Generados
+Se deben incluir al menos **3 gráficos** relacionados con el análisis supervisado:
+
+📈 Tendencias
+🗂️ Clasificaciones
+📉 Comparaciones de resultados
+
+> Los gráficos deben ayudar a **visualizar e interpretar** la información de forma clara.
+
+---
+
+## 🧪 6. Resultados Obtenidos
+✦ Presentar los resultados obtenidos tras aplicar los algoritmos, junto con su **interpretación en el contexto del proyecto**.
+
+🔍 Explicar cómo los resultados:
+- Apoyan la toma de decisiones.
+- Validan hipótesis planteadas.
+- Mejoran la comprensión del problema.
+
+---
+
+## ✅ 7. Conclusión de la Fase del Proyecto
+📌 Redacción final que incluya:
+- La importancia de esta fase dentro del proyecto.
+- El valor de los resultados obtenidos.
+- Reflexiones sobre aprendizajes y posibles mejoras.
+
+✨ **Cierre con una visión clara del impacto del análisis supervisado en el proyecto.**

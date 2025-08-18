@@ -14,7 +14,7 @@ Puedes incluir una carpeta con el código fuente (`.py`) o, si ya se encuentra e
 Incluye un archivo con la estructura de la base de datos, ya sea relacional o no relacional.
 Este respaldo servirá como plantilla para cargar datos simulados.
 
-📎 **Repositorio del respaldo vacío:** [URL DEL REPOSITORIO SEEDER](https://uwu.com)
+📎 **Repositorio del respaldo vacío:** [URL DEL REPOSITORIO SEEDER](https://basevacia.com)
 
 ---
 
@@ -44,4 +44,4 @@ Incluye capturas de pantalla del uso de los endpoints que generan los datos, pre
 Este respaldo contiene una base de datos ya poblada con un millón de registros, útil para alimentar algoritmos de análisis supervisado y no supervisado.
 
 📦 **Formato recomendado:** `.sql`, `.json`, `.bson` (según el tipo de base de datos)
-📍 **Ubicación:** [URL del respaldo con datos generados](https://uwu.com)
+📍 **Ubicación:** [URL del respaldo con datos generados](https://basecondatos.com)
