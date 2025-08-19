@@ -2,26 +2,28 @@
 
 #### Importación de librerías
 ###### Comandos de importación y breve explicación de la librerias utilizadas para la manipulación de datos, limpieza y transformación
-import pandas as pd        # Manipulación y análisis de datos en estructuras tipo DataFrame
-import numpy as np         # Cálculo numérico y operaciones con arrays
-import matplotlib.pyplot as plt   # Visualización de gráficos estáticos
-import seaborn as sns      # Visualización estadística avanzada con gráficos más estilizados
-import plotly.express as px        # Visualización interactiva de datos
-import plotly.graph_objects as go  # Gráficos personalizados interactivos
-from plotly.subplots import make_subplots   # Creación de dashboards con múltiples gráficos
-import warnings            # Manejo de advertencias para limpiar la salida del notebook
-from datetime import datetime, timedelta   # Manejo de fechas y tiempos
-import os                  # Interacción con el sistema operativo (rutas, archivos, variables de entorno)
-from dotenv import load_dotenv   # Carga de variables de entorno desde archivo .env
-from sqlalchemy import create_engine, text   # Conexión y consultas a bases de datos SQL
-import pymysql             # Conector para bases de datos MySQL
-from scipy import stats     # Funciones estadísticas y científicas
-from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler   # Escaladores para normalización de datos
-from sklearn.cluster import DBSCAN   # Algoritmo de clustering basado en densidad
-import logging             # Registro de logs para monitoreo y depuración
-import json                # Manejo de archivos en formato JSON
-from datetime import datetime   # Uso de fechas y tiempos
+```python
+import pandas as pd                    # Manipulación y análisis de datos en estructuras tipo DataFrame
+import numpy as np                     # Cálculo numérico y operaciones con arrays
+import matplotlib.pyplot as plt        # Visualización de gráficos estáticos
+import seaborn as sns                  # Visualización estadística avanzada con gráficos más estilizados
+import plotly.express as px            # Visualización interactiva de datos
+import plotly.graph_objects as go      # Gráficos personalizados interactivos
+from plotly.subplots import make_subplots  # Creación de dashboards con múltiples gráficos
+import warnings                        # Manejo de advertencias para limpiar la salida del notebook
+from datetime import datetime, timedelta  # Manejo de fechas y tiempos
+import os                              # Interacción con el sistema operativo (rutas, archivos, variables de entorno)
+from dotenv import load_dotenv          # Carga de variables de entorno desde archivo .env
+from sqlalchemy import create_engine, text  # Conexión y consultas a bases de datos SQL
+import pymysql                          # Conector para bases de datos MySQL
+from scipy import stats                 # Funciones estadísticas y científicas
+from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler  # Escaladores para normalización de datos
+from sklearn.cluster import DBSCAN      # Algoritmo de clustering basado en densidad
+import logging                          # Registro de logs para monitoreo y depuración
+import json                             # Manejo de archivos en formato JSON
+```
 
+```python
 ### Carga de datos
 ###### Comandos de carga de los datos en memoria desde su origen fisico
 load_dotenv()
@@ -49,14 +51,20 @@ query = """
     ;
 """
 df_raw = pd.read_sql_query(query, engine)
+```
 
 ### Creación del Dataframe
 ###### Comandos de la creación de (los) dataframe(s) a manipular
+
+```python
 df_raw.head()
 df_raw.shape
+```
+
 
 ### Analisis Exploratorio de Datos (EDA)
 ###### Comandos que permiten comprender la composición y estructura de los datos
+```python
 print(f"Filas: {df_raw.shape[0]:,}  Columnas: {df_raw.shape[1]}")
 print(f"Memoria: {df_raw.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
 
@@ -69,9 +77,12 @@ user_stats.columns = ['Total_Mediciones', 'Primera_Medicion', 'Ultima_Medicion',
 
 pd.to_datetime(user_stats['Primera_Medicion'])
 pd.to_datetime(user_stats['Ultima_Medicion'])
+```
+
 
 ### Limpieza de Datos
 ###### Comandos para la deburación y limpieza de datos
+```python
 df_clean = df_raw.copy()
 
 df_clean = df_clean.drop_duplicates()
@@ -94,18 +105,24 @@ for variable, (min_val, max_val) in rangos_vitales.items():
         fuera_rango = (df_clean[variable] < min_val) | (df_clean[variable] > max_val)
         registros_a_eliminar = registros_a_eliminar | fuera_rango
 df_clean = df_clean[~registros_a_eliminar].reset_index(drop=True)
+```
 
 ### Visualización de Datos (2 a 5 gráficas)
 ###### Generación de gráficos base para la visualización del volumen. categorización e identificación de datos significativos para el análisis de datos
+```python
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
 records_data = ['Inicial', 'Final', 'Eliminados']
 records_values = [initial_total, final_total, total_eliminated]
 ax1.bar(records_data, records_values)
 ax2.pie([final_total, total_eliminated], labels=['Conservados', 'Eliminados'], autopct='')
 plt.tight_layout(); plt.show()
+```
+
 
 ### Exportación de DataSET (.csv)
 ###### Generación de un archivo de datos simplificado y limpio que servira para alimentar los algoritmos de aprendizaje supervisado y no supervisado
+
+```python
 df_clean.to_csv('data/processed/mediciones_cardiacas_clean.csv', index=False)
 
 metadata = {
@@ -118,6 +135,7 @@ metadata = {
 }
 with open('data/processed/cleaning_metadata.json', 'w') as f:
     json.dump(metadata, f, indent=2)
+```
 
 ### Conclusión de esta Fase
 ###### Redacción general de la fase del proyecto
