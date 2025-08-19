@@ -23,9 +23,10 @@ import logging                          # Registro de logs para monitoreo y depu
 import json                             # Manejo de archivos en formato JSON
 ```
 
-```python
+
 ### Carga de datos
 ###### Comandos de carga de los datos en memoria desde su origen fisico
+```python
 load_dotenv()
 DATABASE_URL = os.getenv('DATABASE_URL')
 engine = create_engine(DATABASE_URL)
