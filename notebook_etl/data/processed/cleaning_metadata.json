@@ -1,0 +1,20 @@
+{
+  "proceso_limpieza": {
+    "fecha_procesamiento": "2025-08-18T21:24:03.936891",
+    "registros_finales": 6587,
+    "usuarios_finales": 100,
+    "columnas_finales": [
+      "ID",
+      "Usuario_ID",
+      "Timestamp_medicion",
+      "Frecuencia_cardiaca",
+      "Presion_sistolica",
+      "Presion_diastolica",
+      "Saturacion_oxigeno",
+      "Temperatura",
+      "Nivel_estres",
+      "Variabilidad_ritmo",
+      "Fecha_Registro"
+    ]
+  }
+}
