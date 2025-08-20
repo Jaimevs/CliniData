@@ -1,39 +1,42 @@
-# PREDICT-HEALTH 
+# CLINIDATA
 <hr>
 
 ### Introducción
 
-PredictHealth representa una revolución en el ámbito de la medicina preventiva y la salud digital, desarrollado como parte del proyecto CLINI-DATA de la Universidad Tecnológica de Xicotepec de Juárez. Este sistema inteligente surge de la necesidad crítica de abordar el creciente problema de las Enfermedades Crónicas No Transmisibles (ECNT) que representan la principal causa de mortalidad a nivel mundial, siendo responsables de más del 70% de las muertes anuales según la Organización Mundial de la Salud.
+CliniData representa una revolución en el ámbito de la medicina preventiva y la salud digital, desarrollado como parte del proyecto de la Universidad Tecnológica de Xicotepec de Juárez. Este sistema inteligente surge de la necesidad crítica de abordar el creciente problema de las Enfermedades Crónicas No Transmisibles (ECNT) que representan la principal causa de mortalidad a nivel mundial, siendo responsables de más del 70% de las muertes anuales según la Organización Mundial de la Salud.
 
 En México, las enfermedades cardiovasculares, diabetes e hipertensión han alcanzado proporciones epidémicas, afectando a millones de personas y generando costos astronómicos para el sistema de salud. La detección tardía de estas condiciones resulta en tratamientos más complejos, costos elevados y, más importante aún, en pérdidas humanas que podrían prevenirse.
 
-PredictHealth integra tecnologías emergentes como inteligencia artificial, machine learning, dispositivos wearables y computación en la nube para crear un ecosistema de salud predictiva que opera en tiempo real. El sistema utiliza algoritmos de aprendizaje supervisado y no supervisado para analizar patrones en datos biomédicos, identificando señales tempranas de riesgo cardiovascular y generando alertas preventivas personalizadas.
+CliniData integra tecnologías emergentes como inteligencia artificial, machine learning, dispositivos wearables y computación en la nube para crear un ecosistema de salud predictiva que opera en tiempo real. El sistema utiliza algoritmos de aprendizaje supervisado y no supervisado para analizar patrones en datos biomédicos, identificando señales tempranas de riesgo cardiovascular y generando alertas preventivas personalizadas.
 
-La plataforma está diseñada bajo una arquitectura de microservicios que garantiza escalabilidad, mantenibilidad y la capacidad de integración con sistemas de salud existentes. Al combinar el poder del análisis predictivo con la accesibilidad de los dispositivos wearables comerciales, PredictHealth democratiza el acceso a tecnologías de monitoreo médico avanzado, permitiendo que cualquier persona pueda beneficiarse de un sistema de alerta temprana sofisticado desde la comodidad de su hogar.
+La plataforma está diseñada bajo una arquitectura de microservicios que garantiza escalabilidad, mantenibilidad y la capacidad de integración con sistemas de salud existentes. Al combinar el poder del análisis predictivo con la accesibilidad de los dispositivos wearables comerciales, CliniData democratiza el acceso a tecnologías de monitoreo médico avanzado, permitiendo que cualquier persona pueda beneficiarse de un sistema de alerta temprana sofisticado desde la comodidad de su hogar.
 
-<br>
+---
 
-### Identidad Gráfica
+## Identidad Gráfica
 
-| Logo del Producto | Logo de la Marca|
-|---|---|
-| Logo Aquí | Logo Aquí|
+| Logo del Producto                                                  | Logo de la Marca                                             |
+| ------------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Logo Producto](/img/logo.png) | ![Logo Marca](/img/Empresarial.png) |
 
-<br>
+---
 
-### Descripción
 
-PredictHealth es un sistema inteligente de predicción temprana de enfermedades crónicas que combina la potencia del machine learning con la accesibilidad de dispositivos wearables para revolucionar la medicina preventiva. El sistema opera como una plataforma integral que recolecta, procesa y analiza datos biomédicos en tiempo real, transformando información fisiológica básica en insights médicos accionables.
+### 📝 Descripción
+
+CliniData es un sistema inteligente de predicción temprana de enfermedades crónicas que combina la potencia del machine learning con la accesibilidad de dispositivos wearables para revolucionar la medicina preventiva. El sistema opera como una plataforma integral que recolecta, procesa y analiza datos biomédicos en tiempo real, transformando información fisiológica básica en insights médicos accionables.
 
 La arquitectura del sistema se fundamenta en tres modelos de inteligencia artificial complementarios: un modelo de clasificación multiclase que evalúa niveles de riesgo cardiovascular con una precisión del 98.71%, un modelo de detección de anomalías que identifica patrones atípicos en signos vitales, y un modelo de clustering no supervisado que descubre fenotipos naturales de respuesta al estrés en poblaciones.
 
-El ecosistema PredictHealth incluye una aplicación móvil nativa desarrollada en Kotlin para Android, que sirve como interfaz principal para usuarios, permitiendo el monitoreo continuo de signos vitales, visualización de tendencias de salud y recepción de alertas personalizadas. La aplicación se conecta seamlessly con dispositivos wearables comerciales, recolectando datos de frecuencia cardíaca, presión arterial, saturación de oxígeno, temperatura corporal, niveles de estrés y variabilidad del ritmo cardíaco.
+El ecosistema CliniData incluye una aplicación móvil nativa desarrollada en Kotlin para Android, que sirve como interfaz principal para usuarios, permitiendo el monitoreo continuo de signos vitales, visualización de tendencias de salud y recepción de alertas personalizadas. La aplicación se conecta seamlessly con dispositivos wearables comerciales, recolectando datos de frecuencia cardíaca, presión arterial, saturación de oxígeno, temperatura corporal, niveles de estrés y variabilidad del ritmo cardíaco.
 
 El backend del sistema, construido con FastAPI y Python, procesa estos datos utilizando modelos de machine learning entrenados específicamente para detectar patrones asociados con enfermedades cardiovasculares, diabetes e hipertensión. Los algoritmos analizan no solo valores individuales, sino patrones temporales, correlaciones entre variables y desviaciones de líneas base personalizadas para cada usuario.
 
 La plataforma web administrativa, desarrollada con React y TailwindCSS, proporciona a profesionales de la salud una vista integral de sus pacientes, incluyendo dashboards de monitoreo en tiempo real, historial médico digital, análisis de tendencias poblacionales y herramientas de toma de decisiones asistidas por IA.
 
-### Planteamiento del Problema
+---
+
+### ❌ Planteamiento del Problema
 
 Las Enfermedades Crónicas No Transmisibles representan una crisis de salud pública global sin precedentes. En México, las estadísticas son alarmantes: más de 12 millones de personas viven con diabetes, mientras que la hipertensión afecta a aproximadamente 30 millones de mexicanos, muchos de los cuales desconocen su condición. Las enfermedades cardiovasculares causan más de 140,000 muertes anuales en el país, convirtiéndose en la principal causa de mortalidad.
 
@@ -43,9 +46,11 @@ Los sistemas de salud actuales operan bajo un modelo reactivo, donde los pacient
 
 La falta de herramientas de monitoreo continuo accesibles agrava el problema. Los chequeos médicos anuales proporcionan solo una instantánea de la salud del paciente, perdiendo información valiosa sobre variaciones diurnas, respuestas al estrés, y tendencias graduales que podrían indicar el desarrollo de condiciones crónicas. Esta limitación es particularmente crítica para enfermedades cuya progresión se caracteriza por cambios sutiles pero constantes en parámetros fisiológicos.
 
-### Propuesta de Solución
+---
 
-PredictHealth propone una transformación paradigmática del modelo de atención médica, evolucionando de un enfoque reactivo hacia un sistema proactivo y predictivo. La solución integra múltiples componentes tecnológicos para crear un ecosistema de salud integral que opera 24/7.
+### ✅ Propuesta de Solución
+
+CliniData propone una transformación paradigmática del modelo de atención médica, evolucionando de un enfoque reactivo hacia un sistema proactivo y predictivo. La solución integra múltiples componentes tecnológicos para crear un ecosistema de salud integral que opera 24/7.
 
 **Arquitectura Técnica:**
 El sistema implementa una arquitectura de microservicios distribuida que incluye: un motor de inteligencia artificial desarrollado con TensorFlow y scikit-learn que procesa datos biomédicos utilizando algoritmos de Random Forest, K-Means clustering e Isolation Forest; una API RESTful construida con FastAPI que maneja la comunicación entre componentes; una base de datos PostgreSQL optimizada para almacenamiento de series temporales médicas; y servicios de computación en la nube desplegados en AWS para garantizar escalabilidad y disponibilidad.
@@ -62,15 +67,15 @@ La plataforma implementa cifrado end-to-end para proteger datos médicos sensibl
 **Integración y Escalabilidad:**
 El sistema está diseñado para integrarse con sistemas hospitalarios existentes a través de APIs estandarizadas HL7 FHIR, permitiendo la importación de historiales médicos y la exportación de alertas. La arquitectura de microservicios facilita la escalabilidad horizontal, permitiendo el crecimiento desde usuarios individuales hasta poblaciones enteras.
 
-<br>
+---
 
-### Objetivo General
+### 🎯 Objetivo General
 
 Desarrollar e implementar un sistema inteligente de predicción temprana de enfermedades crónicas que utilice tecnologías de inteligencia artificial y dispositivos wearables para detectar, analizar y alertar sobre riesgos cardiovasculares en tiempo real, transformando el paradigma de atención médica de reactivo a preventivo. El sistema debe ser capaz de procesar datos biomédicos continuos, generar predicciones precisas con algoritmos de machine learning, y proporcionar herramientas intuitivas tanto para pacientes como para profesionales de la salud, con el objetivo de reducir la incidencia y mortalidad de enfermedades crónicas no transmisibles a través de intervenciones tempranas y personalizadas.
 
-<br>
+---
 
-### Objetivos Específicos
+### 📌 Objetivos Específicos
 
 • **Desarrollar modelos de machine learning de alta precisión** que clasifiquen automáticamente los niveles de riesgo cardiovascular de pacientes utilizando algoritmos de Random Forest, logrando una precisión mínima del 95% en la identificación de casos críticos y normales.
 
@@ -84,25 +89,23 @@ Desarrollar e implementar un sistema inteligente de predicción temprana de enfe
 
 • **Integrar capacidades de análisis predictivo avanzado** que utilicen modelos de series temporales para predecir eventos cardiovasculares con 72 horas de anticipación, considerando patrones históricos, factores de riesgo individuales, y correlaciones entre múltiples variables biomédicas.
 
-<br>
+---
 
-### Organigrama de Trabajo
+### 👥 Organigrama de Trabajo
 
-<br>
 
 | <img src="https://avatars.githubusercontent.com/u/158859972?s=96&v=4" width="100" height="100"> |
 |-------------------------------------------|
 | **Jaime Vázquez** <br> Líder - Backend & Machine Learning |
 
-<br>
 
 | <img src="https://avatars.githubusercontent.com/u/108243614?v=4" width="100" height="100"> | <img src="https://avatars.githubusercontent.com/u/152038977?v=4" width="100" height="100"> | <img src="https://avatars.githubusercontent.com/u/145584626?v=4" width="100" height="100"> |
 |-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 | **Alejandro** <br> Frontend                  | **Ana Karen** <br> Base de Datos              | **Martín Vargas** <br> Documentación           |
 
-<br>
+---
 
-### Tabla de Colaboradores
+### 👥 Tabla de Colaboradores
 
 | Nombre             | Rol                          |
 |--------------------|------------------------------|
@@ -111,13 +114,15 @@ Desarrollar e implementar un sistema inteligente de predicción temprana de enfe
 | [Ana Karen](https://github.com/AnaCrisanto)  | Creación de Base de Datos    |
 | [Martín Vargas](https://github.com/MRVargas19) | Documentación                |
 
-<br>
+---
 
-### Diagrama de Gantt
+### 📅 Diagrama de Gantt
 
-[Diagrama de identificación de tareas para realizar el proyecto, así como de cálculo de tiempos establecidos para cada tarea principal]
+![Diagrama de Gantt](/img/DiagramaGantt.png)
 
-### Lista de Tecnologías
+---
+
+### 🛠️ Lista de Tecnologías
 
 #### **Frontend y Móvil**
 - <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" width="20" height="20"/> **React** - Biblioteca para interfaces de usuario web
