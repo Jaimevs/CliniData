@@ -1,6 +1,6 @@
 #  API Predict Health - Documentación Completa
 
-## 🔗 Código Fuente
+##  Código Fuente
 **Repositorio API:** [API-PredictHealth](https://github.com/Jaimevs/API-PredictHealth)
 
 **Stack Tecnológico:**
