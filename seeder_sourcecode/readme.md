@@ -1,12 +1,13 @@
-# 📦 Seeder - Documentación
+#  Seeder - Documentación
 
 ---
 
 ## 🔹 Código Fuente
 
-Puedes incluir una carpeta con el código fuente (`.py`) o, si ya se encuentra en un repositorio, proporciona el enlace correspondiente.
-**Ejemplo:** [Repositorio del Seeder](https://github.com/Jaimevs/API-PredictHealth)
-
+Enlace del Seeder
+**Ejemplo:** [Repositorio del Seeder](https://github.com/Jaimevs/seeder)
+Seeder dentro de API
+**Ejemplo:** [Repositorio del Seeder](https://github.com/Jaimevs/API-PredictHealth/tree/main/seeders)
 ---
 
 ## 🔹 Respaldo de la Base de Datos Vacía (Sin Datos)
@@ -14,28 +15,43 @@ Puedes incluir una carpeta con el código fuente (`.py`) o, si ya se encuentra e
 Incluye un archivo con la estructura de la base de datos, ya sea relacional o no relacional.
 Este respaldo servirá como plantilla para cargar datos simulados.
 
-📎 **Repositorio del respaldo vacío:** [URL DEL REPOSITORIO SEEDER](https://basevacia.com)
+📎 **Repositorio del respaldo vacío:** [URL DEL REPOSITORIO SEEDER](https://github.com/Jaimevs/EstructuraBase)
 
 ---
 
-## 🔹 Endpoints para Generación de Datos Simulados
+# 🚀 Seeders API - Generación de Datos Simulados
 
-A continuación, se muestra una tabla con los endpoints disponibles, junto con una breve descripción de su funcionalidad:
+Este módulo expone endpoints para **generar datos simulados** en la base de datos: usuarios, roles, dispositivos, perfiles de salud, alertas y más.  
+Ideal para **pruebas, desarrollo e inicialización** del sistema.
 
-| Endpoint                  | Descripción                                     |
-|---------------------------|-------------------------------------------------|
-| `/api/generate/users`     | Genera usuarios simulados                       |
-| `/api/generate/orders`    | Genera órdenes con información aleatoria        |
-| `/api/generate/products`  | Crea un catálogo de productos de prueba         |
-| ...                       | ...                                             |
+---
 
-> 🔁 *Agrega o modifica los endpoints según sea necesario.*
+##  Endpoints Disponibles
+
+| Método | Endpoint                                   | Descripción                                                                 | Parámetros principales                                                                 |
+|--------|--------------------------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| **GET**  | `/seeders/`                                | Lista todos los **seeders disponibles** con nombre, descripción y tablas.   | —                                                                                     |
+| **POST** | `/seeders/run/{seeder_name}`               | Ejecuta un **seeder individual**.                                           | `seeder_name` (path, str) → nombre del seeder <br> `clear_first` (query, bool, opc.) → limpiar antes |
+| **POST** | `/seeders/run-all`                         | Ejecuta **todos los seeders** o una lista específica en orden.              | `clear_first` (query, bool, opc.) <br> `selected_seeders` (query, List[str], opc.)     |
+| **POST** | `/seeders/clear-all`                       | **⚠️ Elimina todos los datos** de todas las tablas (operación destructiva). | —                                                                                     |
+| **POST** | `/seeders/heart-measurements/{user_id}`    | Genera **mediciones cardíacas** para un usuario específico.                 | `user_id` (path, int) <br> `days` (query, int, default=30, rango 1–365)                |
+| **GET**  | `/seeders/status`                          | Obtiene el **estado actual de las tablas**: registros, vacías o con error.  | —                                                                                     |
 
 ---
 
 ## 🔹 Capturas de Pantalla
 
-Incluye capturas de pantalla del uso de los endpoints que generan los datos, preferentemente desde una herramienta como Postman o Swagger UI.
+A continuación se muestran ejemplos del uso de los endpoints con **Postman** / **Swagger UI**.  
+Las imágenes están en la misma carpeta que este README.
+
+| Endpoint | Descripción | Captura |
+|----------|-------------|---------|
+| `GET /seeders/` | Lista de seeders disponibles | ![Lista de Seeders](./img/Captura%20de%20pantalla%202025-08-20%20024444.png) |
+| `POST /seeders/run/{seeder_name}` | Ejecución de un seeder individual (`users`) | ![Seeder Users](./img/Captura%20de%20pantalla%202025-08-20%20024706.png) |
+| `POST /seeders/run-all` | Ejecución de todos los seeders | ![Run All Seeders](./img/Captura%20de%20pantalla%202025-08-20%20024242.png) |
+| `POST /seeders/clear-all` | Limpieza total de la base de datos | ![Clear All](./img/Captura%20de%20pantalla%202025-08-20%20025130.png) |
+| `POST /seeders/heart-measurements/{user_id}` | Generación de mediciones cardíacas para un usuario | ![Heart Measurements](./img/Captura%20de%20pantalla%202025-08-20%20024444.png) |
+| `GET /seeders/status` | Estado actual de las tablas en la base de datos | ![Status](./img/Captura%20de%20pantalla%202025-08-20%20024805.png) |
 
 ---
 
@@ -44,4 +60,4 @@ Incluye capturas de pantalla del uso de los endpoints que generan los datos, pre
 Este respaldo contiene una base de datos ya poblada con un millón de registros, útil para alimentar algoritmos de análisis supervisado y no supervisado.
 
 📦 **Formato recomendado:** `.sql`, `.json`, `.bson` (según el tipo de base de datos)
-📍 **Ubicación:** [URL del respaldo con datos generados](https://basecondatos.com)
+📍 **Ubicación:** [URL del respaldo con datos generados](https://github.com/Jaimevs/BasePoblada)
