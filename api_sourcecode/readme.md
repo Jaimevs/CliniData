@@ -1,4 +1,4 @@
-# 📊 API Predict Health - Documentación Completa
+#  API Predict Health - Documentación Completa
 
 ## 🔗 Código Fuente
 **Repositorio API:** [API-PredictHealth](https://github.com/Jaimevs/API-PredictHealth)
@@ -12,7 +12,7 @@
 
 ---
 
-## 🔧 Operaciones CRUD Básicas
+##  Operaciones CRUD Básicas
 
 ### **GET** - Consultar Recursos
 Operaciones de lectura para obtener información de la base de datos. Incluye filtros, paginación y búsquedas específicas.
@@ -31,7 +31,7 @@ Operaciones de eliminación lógica o física de registros. Incluye validaciones
 
 ---
 
-## 📋 Listado de EndPoints de las Entidades
+##  Listado de EndPoints de las Entidades
 
 | Endpoint | Método | Funcionalidad | Entidad |
 |----------|--------|---------------|---------|
@@ -88,7 +88,7 @@ Operaciones de eliminación lógica o física de registros. Incluye validaciones
 | `/user-roles/{user_id}/{role_id}` | PUT | Actualizar asignación | Asignación de Roles |
 | `/user-roles/{user_id}/{role_id}` | DELETE | Eliminar asignación | Asignación de Roles |
 
-### 📸 Screenshots (Capturas de Pantalla)
+###  Screenshots (Capturas de Pantalla)
 
 #### **1. Swagger UI - Documentación Interactiva**
 ![Swagger Documentation](screenshots/swagger_docs.png)
@@ -116,7 +116,7 @@ Operaciones de eliminación lógica o física de registros. Incluye validaciones
 
 ---
 
-## 🤖 Endpoints que utilizan ML (Machine Learning)
+##  Endpoints que utilizan ML (Machine Learning)
 
 ### **Análisis Supervisado**
 **Predicción de Riesgo Cardiovascular:** Utilizamos redes neuronales profundas para analizar datos biométricos, antecedentes médicos y patrones de actividad física para predecir el riesgo cardiovascular de los pacientes.
@@ -134,7 +134,7 @@ Operaciones de eliminación lógica o física de registros. Incluye validaciones
 
 ---
 
-## 📊 Listado de EndPoints que consumen ML
+##  Listado de EndPoints que consumen ML
 
 | Endpoint | Método | Funcionalidad ML | Algoritmo |
 |----------|--------|------------------|-----------|
@@ -197,7 +197,7 @@ Operaciones de eliminación lógica o física de registros. Incluye validaciones
 
 ---
 
-## 🚀 Información Adicional
+##  Información Adicional
 
 ### **URLs de Acceso:**
 - **API Base:** http://localhost:8000
@@ -211,10 +211,10 @@ Operaciones de eliminación lógica o física de registros. Incluye validaciones
 - **Expiración:** 30 minutos
 
 ### **Validaciones Médicas Automáticas:**
-- ✅ Rangos vitales normales por edad
-- ✅ Alertas automáticas por valores críticos
-- ✅ Detección de emergencias médicas
-- ✅ Validación de integridad de datos médicos
+-  Rangos vitales normales por edad
+-  Alertas automáticas por valores críticos
+-  Detección de emergencias médicas
+-  Validación de integridad de datos médicos
 
 ### **Casos de Uso Principales:**
 1. **Monitoreo de Pacientes Críticos**
