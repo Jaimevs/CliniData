@@ -91,27 +91,27 @@ Operaciones de eliminación lógica o física de registros. Incluye validaciones
 ###  Screenshots (Capturas de Pantalla)
 
 #### **1. Swagger UI - Documentación Interactiva**
-![Swagger Documentation](screenshots/swagger_docs.png)
+![Swagger Documentation](/api_sourcecode/img/capturas%20api/Swagger%20UI%20-%20Documentación%20Interactiva/Screenshot%202025-08-13%20222326.png)
 *Documentación automática de la API con interfaz interactiva para probar endpoints*
 
 #### **2. Endpoint POST /persons - Crear Paciente**
-![Create Person](screenshots/post_persons.png)
+![Create Person](/api_sourcecode/img/capturas%20api/Endpoint%20POST%20persons%20-%20Crear%20Paciente/Screenshot%202025-08-13%20222645.png)
 *Registro de nuevo paciente con validaciones automáticas*
 
 #### **3. Endpoint GET /heart-measurements/user/{id} - Mediciones Cardíacas**
-![Heart Measurements](screenshots/get_heart_measurements.png)
+![Heart Measurements](/api_sourcecode/img/capturas%20api/Endpoint%20GET%20heart-measurementsuser{id}%20-%20Mediciones%20Cardíacas/Screenshot%202025-08-13%20225206.png)
 *Consulta de historial de mediciones biométricas por paciente*
 
 #### **4. Endpoint POST /alerts - Sistema de Alertas**
-![Create Alert](screenshots/post_alerts.png)
+![Create Alert](/api_sourcecode/img/capturas%20api/Endpoint%20POST%20alerts/Screenshot%202025-08-13%20225318.png)
 *Creación de alertas médicas automáticas y manuales*
 
 #### **5. Endpoint GET /health-profiles/user/{id} - Perfil Médico**
-![Health Profile](screenshots/get_health_profile.png)
+![Health Profile](/api_sourcecode/img/capturas%20api/Endpoint%20GET/Screenshot%202025-08-13%20230000.png)
 *Consulta de perfil médico completo con antecedentes*
 
 #### **6. Endpoint POST /physical-activities - Actividad Física**
-![Physical Activity](screenshots/post_physical_activity.png)
+![Physical Activity](/api_sourcecode/img/capturas%20api/Endpoint%20POST/Screenshot%202025-08-13%20230106.png)
 *Registro de sesiones de ejercicio y rehabilitación*
 
 ---
@@ -172,27 +172,27 @@ Operaciones de eliminación lógica o física de registros. Incluye validaciones
 ### 📸 Screenshots ML (Capturas de Pantalla)
 
 #### **1. Endpoint ML - Predicción de Riesgo Cardiovascular**
-![ML Risk Prediction](screenshots/ml_risk_prediction.png)
+![ML Risk Prediction](/api_sourcecode/img/capturas%20api/ML%20Endpoints%20-%20Screenshots%20de%20Machine%20Learning/Predicción%20de%20Riesgo%20Cardiovascular/Screenshot%202025-08-13%20232432.png)
 *Predicción de riesgo cardiovascular con explicación de factores*
 
 #### **2. Análisis de Patrones Cardíacos - Dashboard ML**
-![ML Heart Patterns](screenshots/ml_heart_patterns.png)
+![ML Heart Patterns](/api_sourcecode/img/capturas%20api/ML%20Endpoints%20-%20Screenshots%20de%20Machine%20Learning/Análisis%20de%20Patrones%20Cardíacos%20-%20Dashboard%20ML/Screenshot%202025-08-13%20232642.png)
 *Análisis temporal de patrones cardíacos con detección de anomalías*
 
 #### **3. Sistema de Recomendaciones Personalizadas**
-![ML Recommendations](screenshots/ml_recommendations.png)
+![ML Recommendations](/api_sourcecode/img/capturas%20api/ML%20Endpoints%20-%20Screenshots%20de%20Machine%20Learning/Sistema%20de%20Recomendaciones%20Personalizadas/Screenshot%202025-08-13%20232753.png)
 *Recomendaciones de ejercicio basadas en perfil médico y ML*
 
 #### **4. Detección de Anomalías en Tiempo Real**
-![ML Anomaly Detection](screenshots/ml_anomaly_detection.png)
+![ML Anomaly Detection](/api_sourcecode/img/capturas%20api/ML%20Endpoints%20-%20Screenshots%20de%20Machine%20Learning/Detección%20de%20Anomalías%20en%20Tiempo%20Real/Screenshot%202025-08-14%20103138.png)
 *Sistema de detección de anomalías biométricas en tiempo real*
 
 #### **5. Score de Salud Integral con IA**
-![ML Health Score](screenshots/ml_health_score.png)
+![ML Health Score](/api_sourcecode/img/capturas%20api/ML%20Endpoints%20-%20Screenshots%20de%20Machine%20Learning/Score%20de%20Salud%20Integral%20con%20IA/Screenshot%202025-08-14%20103440.png)
 *Cálculo de score de salud integral usando múltiples algoritmos*
 
 #### **6. Dashboard de Insights ML**
-![ML Insights Dashboard](screenshots/ml_insights_dashboard.png)
+![ML Insights Dashboard](/api_sourcecode/img/capturas%20api/Swagger%20UI%20-%20Documentación%20Interactiva/Screenshot%202025-08-13%20222326.png)
 *Dashboard con insights de estilo de vida generados por IA*
 
 ---
